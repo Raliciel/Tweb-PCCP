@@ -1,0 +1,46 @@
+@charset "utf-8";
+*{
+	font-family: "TH SarabunPSK", serif;
+	color:#1C2557;
+}
+@media only screen and (min-width : 0px ){
+	body{
+		background-color: rgb(131, 140, 182)
+	}
+	.container a { 
+		position: -webkit-sticky;
+		position: sticky;
+		top: 0;
+		left:0;
+		right:0;
+		z-index: 1000;
+		font-size: 14px;
+	}
+	.container .span8{
+		align-items:center;
+		margin: 10%; 
+		padding:5%;
+	   position:absolute; 
+	   background-color:#FF7600; 
+	   text-align:center;
+   }
+	.container .span8 h1 {
+		font-size:2em; 
+	}
+	.container .span8 p {
+		font-size:.75em; 
+	}
+
+   .container .span8 from{
+	margin: 10%; 
+	padding:.025%;
+	border: 10%;
+	border-color: blanchedalmond;
+   background-color:#FF7600; 
+   text-align:center;
+}
+.container .span8 .row
+{left:10pt;
+	
+text-align:left;}
+}
