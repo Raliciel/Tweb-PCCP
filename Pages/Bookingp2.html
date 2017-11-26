@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html>
 <head>
 	<title>จองเวลาเรียน</title>
@@ -6,28 +7,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../css/LayoutScript.css"/>
 	<link rel="stylesheet" href="../Bootstrap/css/bootstrap.min.css"/>
-	<link href="../Bootstrap/js/bootstrap.min.js"/>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
 </head>
 <body>
 	<div class="container">
-	<a href="http://pccp.ac.th/cshs/" class="d-block p-3 text-center text-white bg-primary b4b"> <img src="../Image/pccp.png" width="20" scale="1" alt=""/>โรงเรียนจุฬาภรณราชวิทยาลัย ปทุมธานี</a>	
 	<div class="span8">
-		<div class="form-group row">
-			<label for="staticEmail" class="col-sm-2 col-form-label">ชื่อ</label>
-			<div class="col-sm-10">
-			<input type="text" readonly class="form-control-plaintext" id="staticEmail" value=nameUsername>
-		</div>
-		<div class="form-group row">
-			<label for="staticEmail" class="col-sm-2 col-form-label">รายวิชา</label>
-			<div class="col-sm-10">
-			<input type="text" id="inputClassCode" placeholder="ตัวอย่างรหัส ก00000">
-        </div>
+        <a href="http://pccp.ac.th/cshs/" class="d-block p-3 text-center text-white bg-primary b4b"> <img src="../Image/pccp.png" width="20" scale="1" alt=""/>โรงเรียนจุฬาภรณราชวิทยาลัย ปทุมธานี</a>	
         <li>สถานที่นัดจอง</li> 
         <div class="custom-controls-stacked">
             <label class="custom-control custom-radio">
                 <input id="radioStacked3" name="radio-stacked" type="radio" class="custom-control-input">
                 <span class="custom-control-indicator"></span>
-                <span class="custom-control-description">ห้องเรียน <input type="text" id="inputRoomCode" placeholder="รหัสห้องเรียน 4 ตัว"></span>
+                <span class="col custom-control-description">ห้องเรียน <input class="col" type="text" id="inputRoomCode" placeholder="รหัสห้องเรียน 4 ตัว"></span>
             </label>
             <label class="custom-control custom-radio">
                 <input id="radioStacked4" name="radio-stacked" type="radio" class="custom-control-input">
@@ -54,9 +48,14 @@
                 <span class="custom-control-indicator"></span>
                 <span class="custom-control-description">อื่นๆ <input type="text" id="inputPlaceName" placeholder="ชื่อห้องเรียน เช่น Shop 1/2"></span>
             </label>
+           </div>	 
             <div class="btn-group-vertical">
-            <a href="Booking.html"role="button" class="btn btn-default">ย้อนกลับ</a>
-            <a href="Bookingp3.html"role="button" class="btn btn-primary">ต่อไป</a>
-       </div> </div>
+                <a href="Booking.html"role="button" class="btn btn-block-lg btn-default">ย้อนกลับ</a>
+                <a href="Bookingp3.html"role="button" class="btn btn-block btn-primary">ต่อไป</a>
+            </div>
+			</div>
+
+	</div>
 </div>
 </body>
+</html>

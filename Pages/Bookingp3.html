@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html>
 <head>
 	<title>จองเวลาเรียน</title>
@@ -6,23 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../css/LayoutScript.css"/>
 	<link rel="stylesheet" href="../Bootstrap/css/bootstrap.min.css"/>
-	<link href="../Bootstrap/js/bootstrap.min.js"/>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
 </head>
 <body>
 	<div class="container">
-	<a href="http://pccp.ac.th/cshs/" class="d-block p-3 text-center text-white bg-primary b4b"> <img src="../Image/pccp.png" width="20" scale="1" alt=""/>โรงเรียนจุฬาภรณราชวิทยาลัย ปทุมธานี</a>	
-	<div class="span8">
-		<div class="form-group row">
-			<label for="staticEmail" class="col-sm-2 col-form-label">ชื่อ</label>
-			<div class="col-sm-10">
-			<input type="text" readonly class="form-control-plaintext" id="staticEmail" value=nameUsername>
-		</div>
-		<div class="form-group row">
-			<label class="col-sm-2 col-form-label">รายวิชา</label>
-			<div class="col-sm-10">
-			<input type="text" id="inputClassCode" placeholder="ตัวอย่างรหัส ก00000">
-        </div>
-        <div class="container">
+	<div class="span8"><a href="http://pccp.ac.th/cshs/" class="d-block p-3 text-center text-white bg-primary b4b"> <img src="../Image/pccp.png" width="20" scale="1" alt=""/>โรงเรียนจุฬาภรณราชวิทยาลัย ปทุมธานี</a>	
+      <ul class="w3-ul" style="width:100%">
         <li>เวลาจอง  วันที่<input type="datetime-local" id="time"></li>
         <table style="width:100%">
                 <tr><th colspan="2">เวลา</th></tr>
@@ -39,29 +32,35 @@
                 <tr><td><input type="checkbox"></td><td>21.30 - 22.00</td></tr>
                 <tr><td><input type="checkbox"></td><td>22.00 - 22.30</td></tr>
                 <tr><td><input type="checkbox"></td><td>22.30 - 23.00</td></tr>
-        </table></div>
-        <div class="btn-group-vertical">
-        <a href="Bookingp2.html"role="button" class="btn btn-default">ย้อนกลับ</a>
-        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target=".bd-example-modal-lg">จองเวลาสอน</button>
-        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="alertModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="alertModalLabel">Modal title</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                โปรดตรวจสอบเวลาจองให้ละเอียดก่อนส่ง
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">กลับไปหน้าจองเวลา</button>
-                <a href="index.html"role="button" class="btn btn-primary">ยืนยัน</a>
-              </div>
-            </div>
-          </div>
-          </div>
-        </div>
+         </table> 
+        </ul> 
+            
+            <div class="btn-group-vertical">
+                <a href="Bookingp2.html"role="button" class="btn btn-default">ย้อนกลับ</a>
+                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target=".bd-example-modal-lg">จองเวลาสอน</button>
+                <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="alertModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="alertModalLabel">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        โปรดตรวจสอบเวลาจองให้ละเอียดก่อนส่ง
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">กลับไปหน้าจองเวลา</button>
+                        <a href="index.html" role="button" class="btn btn-primary">ยืนยัน</a>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+           </div>
+			</div>
+
+	</div>
 </div>
 </body>
+</html>
