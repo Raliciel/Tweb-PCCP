@@ -4,12 +4,12 @@
 	color:#1C2557;
 }
 @media only screen and (min-width : 0px ){
-	body{
-		background-color: rgb(131, 140, 182)
-	}
+
 	.container{
+		background-color: rgb(131, 140, 182);
 		left:0px; right:0px; top:0px; bottom:0px;}
 	.container .span8 a { 
+		background-color: rgb(131, 140, 182);
 		position: absolute;
 		top: 0;
 		left:0;
@@ -37,7 +37,7 @@
 		padding-block-start: auto;
 		padding-block-end: auto;
 	}
-.container .span8 .btn-block, .container .span8 .btn-group-vertrical{
+.container .span8 .btn-block{
 	position:center bottom;
 	top:90%;
 	bottom:0px;

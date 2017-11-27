@@ -1,0 +1,63 @@
+@charset "utf-8";
+*{
+    font-family: "Times new roman","TH SarabanPSK",serif;
+    color:#1C2557;
+}
+@media only screen and (min-width:0px){
+    .container-fluid{
+        margin: 5%;
+    }
+    .container-fluid .row .col-sm-7{
+        background: rgb(81, 93, 133);
+        color:#FFF;
+        padding: 10%;
+        border: 1px;
+        border-color: rgba(250, 181, 77, 0.678);
+    }
+    .container-fluid .row .col-sm-5{
+        text-align: center;
+        margin-left: auto;
+        margin-right:auto;
+    }
+    .container-fluid .row #footer{
+        bottom: 0px;
+        z-index: 100;
+    }
+    .container-fluid .row .col-sm-6 h5, .container-fluid .row .col-sm-8,.container-fluid .row .col-sm-7 h1, .container-fluid .row #BookHead, .container-fluid .row .col-sm-12,.container-fluid .row .col-sm-4{
+        text-align: center;
+    }
+    .container-fluid .row button{
+        margin:5%;
+    }
+    .container-fluid .row .collapse{
+        margin:5%;
+        padding-top: 5%;
+        padding-bottom:5%;
+        text-align: center;
+        background-color: rgba(255, 123, 0, 0.548);
+        width: 90%;
+    }
+    .container-fluid .row .col-sm-6 .row{
+        margin:5%;
+        padding-top: 5%;
+        padding-bottom:5%;
+        background-color: rgba(255, 123, 0, 0.548);
+        width: 90%;
+    }
+    .container-fluid .row .col-sm-8 table thead th{
+        width:40%;
+    }
+    .container-fluid .row .col-sm-12{
+        text-align: center;
+        margin:0px;
+    }
+    .container {
+        margin: 5%;
+        padding-top:5%;
+        padding-bottom: 5%;
+        background-color: rgba(255, 183, 136, 0.479);
+    }
+    .container .row .col-sm-12 h5{
+        text-align: center;
+    }
+}
