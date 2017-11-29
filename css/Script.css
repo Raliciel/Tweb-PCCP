@@ -1,6 +1,6 @@
 @charset "utf-8";
 *{
-    font-family: "Times new roman","TH SarabanPSK",serif;
+    font-family: "Times new roman","THSarabun",serif;
     color:#1C2557;
 }
 @media only screen and (min-width:0px){
@@ -37,19 +37,22 @@
         background-color: rgba(255, 123, 0, 0.548);
         width: 90%;
     }
-    .container-fluid .row .col-sm-6 .row{
+    .container-fluid .row #stra{
         margin:5%;
         padding-top: 5%;
         padding-bottom:5%;
         background-color: rgba(255, 123, 0, 0.548);
         width: 90%;
     }
-    .container-fluid .row .col-sm-8 table thead th{
+    .container-fluid .row #stra .row .col-sm-12{
+        text-align: left;
+
+    }
+    .container-fluid .row .col-sm-8 table thead tr th{
         width:40%;
     }
     .container-fluid .row .col-sm-12{
         text-align: center;
-        margin:0px;
     }
     .container {
         margin: 5%;
@@ -59,5 +62,56 @@
     }
     .container .row .col-sm-12 h5{
         text-align: center;
+    }
+    .card {
+        margin:5%;
+        width: 90%;
+        max-height: 420px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        background-color: rgb(255, 194, 80);
+        box-sizing: border-box; 
+    }
+    .cardon{
+        overflow: auto;
+        margin:5%;
+        width: 90%;
+        min-height: 300px;
+        background-color: goldenrod; 
+    }
+    .container-fluid .cardon .col-sm-12 .table{
+        width:600px;
+        background-color: rgba(255, 255, 255, 0.692) 
+    }
+}
+@media only screen and (min-width:760px){
+    .container-fluid .row .col-sm-7{
+        margin:0px;
+        padding:3%;
+        border-radius: 5px;
+        border-color: rgb(82, 54, 41);
+    }
+    .container-fluid .row .col-sm-7 h1,.container-fluid .row #BookHead h5{
+        text-align: left;
+        font-weight:bold;
+        font-size:2em;
+        margin-bottom:2%;
+    }
+    .container-fluid .row .col-sm-7 p{
+        text-align: right;
+        color: rgba(245, 245, 245, 0.685);
+    }
+    .card{
+        color:rgba(255, 255, 255, 0);
+        background-color:rgba(255, 255, 255, 0);
+        border-color:rgba(255, 255, 255, 0);
+        overflow: inherit;
+    }
+    .card .container-fluid{
+        width: 90%;
+        border-width: 2em;
+    }
+    .row .col-sm-12 .button{
+        margin: .2%;
     }
 }
