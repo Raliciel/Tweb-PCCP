@@ -114,4 +114,7 @@
     .row .col-sm-12 .button{
         margin: .2%;
     }
+    .container-fluid{
+        margin: .2%;
+    }
 }

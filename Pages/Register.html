@@ -1,32 +1,38 @@
 <!DOCTYPE html>
- <html>
-
-<head>
-<title>Time Register - Register</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../css/LayoutScript.css"/>
-	<link rel="stylesheet" href="../Bootstrap/css/bootstrap.min.css"/>
-	<link href="../Bootstrap/js/bootstrap.min.js"/>
-	<script src="https://www.w3schools.com/lib/w3.js"></script>
-</head>
-<body>
-	<div class="container">
-			
-		<div class="span8"><a href="http://pccp.ac.th/cshs/" class="d-block p-3 text-center text-white bg-primary b4b"> <img src="../Image/pccp.png" width="20" scale="1" alt=""/>โรงเรียนจุฬาภรณราชวิทยาลัย ปทุมธานี</a>	
-			<div class="form-horizontal">
-				Email<input type="email" class="form-control" id="inputUsername" placeholder="This will be your Username">
-				Password<input type="password" class="form-control" id="inputPasswordRe" placeholder="Password">
-				<small id="passwordHelpBlock" class="form-text text-muted">
-				Make sure your Password has special characters and number at less one (1) character.
-				</small>
-				Confirmed Password<input type="password" class="form-control" id="inputPasswordReCheck" placeholder="Same as above">
-				<div class="checkbox">
-					<label><input type="checkbox">Remember me</label>
-				</div>			
-				<button type="submit" class="btn btn-secondary"><a href="#">Sign up</a></button>
-			</div>
-		</div>
-	</div>
-</body>
-</html>
+<html lang="en">
+    <head>
+        <title>สมัครสมาชิก: ระบบจองเวลากิจกรรม</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../Bootstrap/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="../css/Script.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h5>สมัครสมาชิก</h5>
+                </div>
+            </div>
+            <form class="col-sm-12">
+                <div class="form-group row">
+                    <label for="email" class="col-sm-4">Email</label>
+                    <input type="email" class="form-control col-sm-8" id="email" placeholder="Email จะใช้เป็น Username ต่อไป">
+                </div>
+                <div class="form-group row">
+                    <label for="pass" class="col-sm-4">รหัสผ่าน</label>
+                    <input type="password" class="form-control col-sm-8" id="pass" placeholder="กรอกรหัสผ่าน">
+                </div>
+                <div class="form-group row">
+                    <label for="passcheck" class="col-sm-4">ยืนยันรหัสผ่าน</label>
+                    <input type="password" class="form-control col-sm-8" id="passcheck" placeholder="กรอกรหัสผ่านเช่นเดียวกับด้านบน">
+                </div>
+                <a type="button submit" href="index.html" class="btn btn-primary col-sm-12" style="color:#fff">สมัครสมาชิก</a>
+            </form>
+        </div>
+    </body>
+</html>    
