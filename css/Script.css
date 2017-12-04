@@ -4,9 +4,9 @@
     color:#1C2557;
 }
 @media only screen and (min-width:0px){
-    .container-fluid{
-        margin: 5%;
-    }
+    body{
+            background-color: rgb(123, 176, 255);
+        }
     .container-fluid .row .col-sm-7{
         background: rgb(81, 93, 133);
         color:#FFF;
@@ -84,7 +84,17 @@
         background-color: rgba(255, 255, 255, 0.692) 
     }
 }
-@media only screen and (min-width:760px){
+@media only screen and (min-width:760px){    
+    .container-fluid{
+        margin: 5%;
+        background-color: rgb(255, 235, 210);
+        padding: 2%;
+        border-style: solid;
+        border-color: #1C2557;
+    }
+    body{
+        padding: 5%;
+    }
     .container-fluid .row .col-sm-7{
         margin:0px;
         padding:3%;
@@ -95,7 +105,7 @@
         text-align: left;
         font-weight:bold;
         font-size:2em;
-        margin-bottom:2%;
+        margin:2%;
     }
     .container-fluid .row .col-sm-7 p{
         text-align: right;
@@ -109,12 +119,29 @@
     }
     .card .container-fluid{
         width: 90%;
-        border-width: 2em;
     }
-    .row .col-sm-12 .button{
+    button{
         margin: .2%;
+    }
+    .cardon{
+        background-color: #FFF;
+    }
+    .cardon.col-sm-12.table{
+        text-align: center;
+        width: 100%;
     }
     .container-fluid{
         margin: .2%;
+    }
+    .container-flulid .row .col-sm-12{
+        margin:0%;
+        padding:0%;
+    }
+    .col-sm-4{
+        text-align: left !important;
+    }
+    .container-fluid .row button{
+        margin:.2%;
+        text-align: center;
     }
 }
