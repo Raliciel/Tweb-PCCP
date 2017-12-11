@@ -1,0 +1,147 @@
+@charset "utf-8";
+*{
+    font-family: "Times new roman","THSarabun",serif;
+    color:#1C2557;
+}
+@media only screen and (min-width:0px){
+    body{
+            background-color: rgb(123, 176, 255);
+        }
+    .container-fluid .row .col-sm-7{
+        background: rgb(81, 93, 133);
+        color:#FFF;
+        padding: 10%;
+        border: 1px;
+        border-color: rgba(250, 181, 77, 0.678);
+    }
+    .container-fluid .row .col-sm-5{
+        text-align: center;
+        margin-left: auto;
+        margin-right:auto;
+    }
+    .container-fluid .row #footer{
+        bottom: 0px;
+        z-index: 100;
+    }
+    .container-fluid .row .col-sm-6 h5, .container-fluid .row .col-sm-8,.container-fluid .row .col-sm-7 h1, .container-fluid .row #BookHead, .container-fluid .row .col-sm-12,.container-fluid .row .col-sm-4{
+        text-align: center;
+    }
+    .container-fluid .row button{
+        margin:5%;
+    }
+    .container-fluid .row .collapse{
+        margin:5%;
+        padding-top: 5%;
+        padding-bottom:5%;
+        text-align: center;
+        background-color: rgba(255, 123, 0, 0.548);
+        width: 90%;
+    }
+    .container-fluid .row #stra{
+        margin:5%;
+        padding-top: 5%;
+        padding-bottom:5%;
+        background-color: rgba(255, 123, 0, 0.548);
+        width: 90%;
+    }
+    .container-fluid .row #stra .row .col-sm-12{
+        text-align: left;
+
+    }
+    .container-fluid .row .col-sm-8 table thead tr th{
+        width:40%;
+    }
+    .container-fluid .row .col-sm-12{
+        text-align: center;
+    }
+    .container {
+        margin: 5%;
+        padding-top:5%;
+        padding-bottom: 5%;
+        background-color: rgba(255, 183, 136, 0.479);
+    }
+    .container .row .col-sm-12 h5{
+        text-align: center;
+    }
+    .card {
+        margin:5%;
+        width: 90%;
+        max-height: 420px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        background-color: rgb(255, 194, 80);
+        box-sizing: border-box; 
+    }
+    .cardon{
+        overflow: auto;
+        margin:5%;
+        width: 90%;
+        min-height: 300px;
+        background-color: goldenrod; 
+    }
+    .container-fluid .cardon .col-sm-12 .table{
+        width:600px;
+        background-color: rgba(255, 255, 255, 0.692) 
+    }
+}
+@media only screen and (min-width:760px){    
+    .container-fluid{
+        margin: 5%;
+        background-color: rgb(255, 235, 210);
+        padding: 2%;
+        border-style: solid;
+        border-color: #1C2557;
+    }
+    body{
+        padding: 5%;
+    }
+    .container-fluid .row .col-sm-7{
+        margin:0px;
+        padding:3%;
+        border-radius: 5px;
+        border-color: rgb(82, 54, 41);
+    }
+    .container-fluid .row .col-sm-7 h1,.container-fluid .row #BookHead h5{
+        text-align: left;
+        font-weight:bold;
+        font-size:2em;
+        margin:2%;
+    }
+    .container-fluid .row .col-sm-7 p{
+        text-align: right;
+        color: rgba(245, 245, 245, 0.685);
+    }
+    .card{
+        color:rgba(255, 255, 255, 0);
+        background-color:rgba(255, 255, 255, 0);
+        border-color:rgba(255, 255, 255, 0);
+        overflow: inherit;
+    }
+    .card .container-fluid{
+        width: 90%;
+    }
+    button{
+        margin: .2%;
+    }
+    .cardon{
+        background-color: #FFF;
+    }
+    .cardon.col-sm-12.table{
+        text-align: center;
+        width: 100%;
+    }
+    .container-fluid{
+        margin: .2%;
+    }
+    .container-flulid .row .col-sm-12{
+        margin:0%;
+        padding:0%;
+    }
+    .col-sm-4{
+        text-align: left !important;
+    }
+    .container-fluid .row button{
+        margin:.2%;
+        text-align: center;
+    }
+}
