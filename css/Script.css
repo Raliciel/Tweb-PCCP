@@ -3,6 +3,9 @@
     font-family: "Times new roman","THSarabun",serif;
     color:#1C2557;
 }
+.sleep {
+    transform: scaleY(0);
+}
 @media only screen and (min-width:0px){
     body{
             background-color: rgb(123, 176, 255);
@@ -90,6 +93,7 @@
         background-color: rgb(255, 235, 210);
         padding: 2%;
         border-style: solid;
+        border-width: 1px;
         border-color: #1C2557;
     }
     body{
