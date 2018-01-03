@@ -20,22 +20,18 @@
                 </div>
                 <div class="col-sm-5">
                     <div class="btn btn-group-vertical">
-                        <a class="btn btn-block btn-primary btn-lg" href="Booking.html" role="button">จองเวลาเรียน</a>
-                        <a class="btn btn-block btn-secondary" href="Check.html" role="button">ตรวจสอบเวลาสอน</a>
-                        <a class="btn btn-block btn-secondary" href="Register.html" role="button">สมัครสมาชิก</a>
-                        <a class="btn btn-block btn-secondary" href="Login.html" role="button">เข้าสู่ระบบ</a>
+                        <a class="btn btn-block btn-primary btn-lg" href="Booking.php" role="button">จองเวลาเรียน</a>
+                        <a class="btn btn-block btn-secondary" href="Check.php" role="button">ตรวจสอบเวลาสอน</a>
                         <a class="btn btn-block btn-secondary disabled" href="#" role="button">วิธีการใช้งาน</a>
                     </div>
                     <div class="row">
                         <div class="col-sm-12" id="footer">
-                            <p style="font-size:.5em;">โรงเรียนจุฬาภรณราชวิทยาลัย ปทุมธานี 2017</p>
+                            <p style="font-size:.5em;">โรงเรียนจุฬาภรณราชวิทยาลัย ปทุมธานี 2017 รหัสโครงงาน PJ59406 ออกแบบ:พิมพิกา ระบบ:พสวัต</p>
                         </div>
                     </div>
                 </div>
             </div>
+
         </div>
-        <footer>
-             @2017 Create by <a href="https://web.facebook.com/profile.php?id=100001721779795">Posanice</a> <a href="https://web.facebook.com/Raliciel.Lolipopcron">Raliciel</a> and <a href="https://web.facebook.com/jasonnonstop10">Jasonnonstop10</a> 
-        </footer>
     </body>
 </html>

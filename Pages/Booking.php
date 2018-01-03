@@ -13,6 +13,7 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
     </head>
     <body>
+	<form name="form1" action="add_Booking.php" method="Post">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-12" id="BookHead">
@@ -24,18 +25,10 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-4">
-                    <p>ชื่อ</p>
-                </div>
-                <div class="col-sm-8">
-                    <input placeholder="%username%">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-4">
                     <p>รหัสวิชา</p>
                 </div>
                 <div class="col-sm-8">
-                <input id="inputClassCode" placeholder="ก00000">
+                <input id="inputClassCode" placeholder="ก00000" name="subject">
                 </div>
             </div>
         </div>
@@ -52,26 +45,26 @@
                     <div class="row">
                         <div class="col-sm-6">
                             <label for="inputClass">ระดับชั้น</label>
-                            <select id="inputClass" class="form-control">
+                            <select id="inputClass" class="form-control" name="class">
                                 <option selected>เลือก...</option>
-                                <option>ม.1</option>
-                                <option>ม.2</option>
-                                <option>ม.3</option>
-                                <option>ม.4</option>
-                                <option>ม.5</option>
-                                <option>ม.6</option>
+                                <option value="1">ม.1</option>
+                                <option value="2">ม.2</option>
+                                <option value="3">ม.3</option>
+                                <option value="4">ม.4</option>
+                                <option value="5">ม.5</option>
+                                <option value="6">ม.6</option>
                             </select>
                         </div>
                         <div class="col-sm-6">
                             <label for="inputClass">ห้องเรียน</label>
-                            <select id="inputClass" class="form-control">
+                            <select id="inputClass" class="form-control" name="room">
                                 <option selected>เลือก...</option>
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                                <option>6</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
                             </select>
                         </div>
                     </div>
@@ -87,64 +80,8 @@
                             <p>รหัสโครงงาน</p> 
                         </div>
                         <div class="col-sm-8">
-                            PJ<input type="String" id="inputStuName" placeholder="00000">
+                            <input type="String" id="inputStuName" placeholder="PJ00000" name="user2">
                         </div>  
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <label for="inputClass">ระดับชั้น</label>
-                            <select id="inputClass" class="form-control">
-                                <option selected>เลือก...</option>
-                                <option>ม.1</option>
-                                <option>ม.2</option>
-                                <option>ม.3</option>
-                                <option>ม.4</option>
-                                <option>ม.5</option>
-                                <option>ม.6</option>
-                            </select>
-                        </div>
-                        <div class="col-sm-4">
-                            <label for="inputClass">ห้องเรียน</label>
-                            <select id="inputClass" class="form-control">
-                                <option selected>เลือก...</option>
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                                <option>6</option>
-                            </select>
-                        </div>
-                        <div class="col-sm-4">
-                            <label for="inputClass">เลขที่</label>
-                            <select id="inputClass" class="form-control">
-                                <option selected>เลือก...</option>
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                                <option>6</option>
-                                <option>7</option>
-                                <option>8</option>
-                                <option>9</option>
-                                <option>10</option>
-                                <option>11</option>
-                                <option>12</option>
-                                <option>13</option>
-                                <option>14</option>
-                                <option>15</option>
-                                <option>16</option>
-                                <option>17</option>
-                                <option>18</option>
-                                <option>19</option>
-                                <option>20</option>
-                                <option>21</option>
-                                <option>22</option>
-                                <option>23</option>
-                                <option>24</option>
-                            </select>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -159,55 +96,58 @@
                     <div class="row">
                         <div class="col-sm-4">
                             <label class="custom-control custom-radio">
-                                <input id="radioStacked3" name="radio-stacked" type="radio" class="custom-control-input">
+                                <input id="radioStacked3" name="radio-stacked" type="radio" class="custom-control-input" value="1">
                                 <span class="custom-control-indicator"></span>
                                 <span class="custom-control-description">ห้องเรียน </span>
                             </label>
                         </div>
                         <div class="col-sm-6">    
-                            <input type="text" id="inputRoomCode" placeholder="รหัสห้องเรียน 4 ตัว">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <label class="custom-control custom-radio">
-                                <input id="radioStacked4" name="radio-stacked" type="radio" class="custom-control-input">
-                                <span class="custom-control-indicator"></span>
-                                <span class="custom-control-description">ห้องปฏิบัติการทดลอง </span>
-                            </label>
-                        </div>
-                        <div class="col-sm-6">
-                            <input type="text" id="inputRoomCode" placeholder="รหัสห้องเรียน 4 ตัว">
+                            <input type="text" name="password" id="inputRoomCode" placeholder="รหัสห้องเรียน 4 ตัว">
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-sm-12">
                             <label class="custom-control custom-radio">
-                                    <input id="radioStacked3" name="radio-stacked" type="radio" class="custom-control-input">
+                                    <input id="radioStacked3" name="radio-stacked" type="radio" class="custom-control-input" value="2">
                                     <span class="custom-control-indicator"></span>
                                     <span class="custom-control-description">ห้องบรรยายรวม </span>
                             </label>
                         </div>
                     </div>
-                    <div class="row">
+					<div class="row">
                         <div class="col-sm-12">
                             <label class="custom-control custom-radio">
-                                <input id="radioStacked3" name="radio-stacked" type="radio" class="custom-control-input">
-                                <span class="custom-control-indicator"></span>
-                                <span class="custom-control-description">หอประชุม </span>
+                                    <input id="radioStacked3" name="radio-stacked" type="radio" class="custom-control-input" value="3">
+                                    <span class="custom-control-indicator"></span>
+                                    <span class="custom-control-description">ห้องปฏิบัติการชีววิทยา </span>
+                            </label>
+                        </div>
+                    </div>
+					<div class="row">
+                        <div class="col-sm-12">
+                            <label class="custom-control custom-radio">
+                                    <input id="radioStacked3" name="radio-stacked" type="radio" class="custom-control-input" value="4">
+                                    <span class="custom-control-indicator"></span>
+                                    <span class="custom-control-description">ห้องปฏิบัติการเคมี </span>
+                            </label>
+                        </div>
+                    </div>
+					<div class="row">
+                        <div class="col-sm-12">
+                            <label class="custom-control custom-radio">
+                                    <input id="radioStacked3" name="radio-stacked" type="radio" class="custom-control-input" value="5">
+                                    <span class="custom-control-indicator"></span>
+                                    <span class="custom-control-description">ห้องปฏิบัติการฟิสิกส์ </span>
                             </label>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-sm-4">
+                        <div class="col-sm-12">
                             <label class="custom-control custom-radio">
-                                <input id="radioStacked3" name="radio-stacked" type="radio" class="custom-control-input">
+                                <input id="radioStacked3" name="radio-stacked" type="radio" class="custom-control-input" value="6">
                                 <span class="custom-control-indicator"></span>
-                                <span class="custom-control-description">อื่นๆ </span>
-                            </label>                        
-                        </div>
-                        <div class="col-sm-6">
-                            <input type="text" id="inputPlaceName" placeholder="ชื่อห้องเรียน เช่น Shop 1/2">
+                                <span class="custom-control-description">หอประชุม </span>
+                            </label>
                         </div>
                     </div>
                 </div>
@@ -219,23 +159,23 @@
                     <h5>วันที่</h5>
                 </div>
                 <div class="col-sm-8">
-                    <input oninput="w3.toggleClass('#timercl','sleep')" id="time" type="date">
+                    <input id="time" type="date" name="day">
                 </div>
             </div>
-            <div id="timercl" class="row sleep">
+            <div class="row">
                 <div class="col-sm-4">
                     <h5>เวลาเริ่มจอง</h5>
                 </div>
                 <div class="col-sm-8">
-                    <input id="time" type="time">
+                    <input id="time" type="time" name="start">
                 </div>
             </div>
-            <div id="timercl" class="row sleep">
+            <div class="row">
                     <div class="col-sm-4">
                         <h5>เวลาสิ้นสุดจอง</h5> 
                     </div>
                     <div class="col-sm-8">
-                        <input id="time" type="time">
+                        <input id="time" type="time" name="end">
                     </div>
                 </div>
             <div class="row">
@@ -256,7 +196,7 @@
                             <p>ท่านไม่สามารถกลับไปแก้ข้อมูลได้</p>
                         </div>
                         <div class="modal-footer">
-                            <a role="button" class="btn btn-outline-primary" href="index-login.html">ยืนยัน</a>
+                            <button type="summit" class="btn btn-outline-prima">ยืนยัน</a>
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">กลับไปตรวจสอบใหม่</button>
                         </div>
                     </div>
@@ -264,5 +204,6 @@
             </div>
         </div>
         </div>
+		</form>
     </body>
 </html>
