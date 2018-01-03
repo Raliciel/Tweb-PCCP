@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>ระบบจองเวลากิจกรรม</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../Bootstrap/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="../css/Script.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h5>ตรวจสอบเวลาสอน</h5>
+                </div>
+                <div class="col-sm-6">
+                    <p>ท่านสามารถยกเลิกการจองได้ตลอดเวลาจนถึง 30 นาทีก่อนเวลาที่จองไว้</p>
+                </div>
+            </div>
+            <div class="card cardon">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-toggle="tab" href="#home">ทั้งหมด</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#room">ห้องเรียน</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#lab">ห้องปฏิบัติการทดลอง</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#std">ห้องบรรยายรวม</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#mee">หอประชุม</a>
+                    </li>
+                    <li class="nav-item">
+                       <a class="nav-link" data-toggle="tab" href="#oth">อื่นๆ</a>
+                    </li>
+                </ul>
+                <div class="tab-content" >
+                <div class="tab-pane active col-sm-12" id="home">
+                    <table class="table table-striped table-hover table-responsive">
+                        <thead class="table table-dark">
+                            <tr>
+                                <th class="col">#</th>
+                                <th class="col">รหัสวิชา</th>
+                                <th class="col">เป้าหมาย</th>
+                                <th class="col">สถานที่นัดจอง</th>
+                                <th class="col">เวลานัดจอง</th>
+                                <th class="col">ยกเลิก</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+                <div class="tab-pane col-sm-12" id="lab">
+                    <table class="table table-striped table-hover table-responsive">
+                        <thead class="table table-dark">
+                            <tr>
+                                <th class="col">#</th>
+                                <th class="col">รหัสวิชา</th>
+                                <th class="col">เป้าหมาย</th>
+                                <th class="col">สถานที่นัดจอง</th>
+                                <th class="col">เวลานัดจอง</th>
+                                <th class="col">ยกเลิก</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+                <div class="tab-pane col-sm-12" id="std">
+                    <table class="table table-striped table-hover table-responsive">
+                        <thead class="table table-dark">
+                            <tr>
+                                <th class="col">#</th>
+                                <th class="col">รหัสวิชา</th>
+                                <th class="col">เป้าหมาย</th>
+                                <th class="col">สถานที่นัดจอง</th>
+                                <th class="col">เวลานัดจอง</th>
+                                <th class="col">ยกเลิก</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+                <div class="tab-pane col-sm-12" id="mee">
+                    <table class="table table-striped table-hover table-responsive">
+                        <thead class="table table-dark">
+                            <tr>
+                                <th class="col">#</th>
+                                <th class="col">รหัสวิชา</th>
+                                <th class="col">เป้าหมาย</th>
+                                <th class="col">สถานที่นัดจอง</th>
+                                <th class="col">เวลานัดจอง</th>
+                                <th class="col">ยกเลิก</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+                <div class="tab-pane col-sm-12" id="oth">
+                    <table class="table table-striped table-hover table-responsive">
+                        <thead class="table table-dark">
+                            <tr>
+                                <th class="col">#</th>
+                                <th class="col">รหัสวิชา</th>
+                                <th class="col">เป้าหมาย</th>
+                                <th class="col">สถานที่นัดจอง</th>
+                                <th class="col">เวลานัดจอง</th>
+                                <th class="col">ยกเลิก</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <button type="button" class="btn btn-warning col-sm-4">ยกเลิกการจอง</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <p style="font-size:.7em; background-color:peru;">หากต้องการยกเลิกการจองใน 30 นาทีก่อนเวลาที่จองไว้โปรดติดต่อห้องเซิร์ฟเวอร์</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <a role="button" class="btn btn-primary col-sm-4" href="index-login.html">กลับสู่หน้าหลัก</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
