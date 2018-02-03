@@ -2,7 +2,13 @@
 *{
     font-family: "Times new roman","THSarabun",serif;
     color:#1C2557;
+
 }
+    .sleep
+    {
+        transform: 0px;
+        
+    }
 @media only screen and (min-width:0px){
     body{
             background-color: rgb(123, 176, 255);

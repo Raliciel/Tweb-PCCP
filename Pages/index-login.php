@@ -20,10 +20,10 @@
                 </div>
                 <div class="col-sm-5">
                     <div class="btn btn-group-vertical">
-                        <a class="btn btn-block btn-primary btn-lg" href="Booking.html" role="button">จองเวลาเรียน</a>
-                        <a class="btn btn-block btn-secondary" href="Check.html" role="button">ตรวจสอบเวลาสอน</a>
-                        <a class="btn btn-block btn-secondary" href="Register.html" role="button">สมัครสมาชิก</a>
-                        <a class="btn btn-block btn-secondary" href="Login.html" role="button">เข้าสู่ระบบ</a>
+                        <a class="btn btn-block btn-primary btn-lg" href="Booking.php" role="button">จองเวลาเรียน</a>
+                        <a class="btn btn-block btn-secondary" href="Check.php" role="button">ตรวจสอบเวลาสอน</a>
+                        <a class="btn btn-block btn-secondary" href="Register.php" role="button">สมัครสมาชิก</a>
+                        <a class="btn btn-block btn-secondary" href="Login.php" role="button">ออกจากระบบ</a>
                         <a class="btn btn-block btn-secondary disabled" href="#" role="button">วิธีการใช้งาน</a>
                     </div>
                     <div class="row">
