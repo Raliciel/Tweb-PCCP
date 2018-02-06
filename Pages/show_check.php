@@ -16,14 +16,13 @@
                 <div class="col-sm-12">
 				<table class="table table-hover table-stripped">
                     <thead class="thead-dark">
-						<th>ที่</th>
-						<th>ผู้สอน</th>
-						<th>ผู้เรียน</th>
+						<th>วิชา</th>
+						<th>ผู้จอง</th>
+						<th>ชั้น</th>
 						<th>ห้องเรียน</th>
 						<th>เริ่ม</th>
 						<th>สิ้นสุด</th>
 					</thead>
-					<tr>
 <?php
 $room=$_POST['roomrend'];
 $pass=$_POST['password'];
@@ -36,15 +35,20 @@ if($room=='1')
 else
 	$roomuse=$room;
 $sql="Select * From roomtable2 Where roomrend = '$room' and day = '$day' order by timein;";
-$result=mysqli_query($link,$sql);?>
-<tb><?while($dbarr=mysqli_fetch_array($result)){echo " ".$dbarr['sub']." ";}?></tb>
-<tb><?while($dbarr=mysqli_fetch_array($result)){echo " ".$dbarr['user']." ";}?></tb>
-<tb><?while($dbarr=mysqli_fetch_array($result)){echo " ".$dbarr['grade']." ";}?></tb>
-<tb><?while($dbarr=mysqli_fetch_array($result)){echo " ".$dbarr['class']." ";}?></tb>
-<tb><?while($dbarr=mysqli_fetch_array($result)){echo " ".$dbarr['timein']." ";}?></tb>
-<tb><?while($dbarr=mysqli_fetch_array($result)){echo " ".$dbarr['timeout']." ";}?></tb>
-</tr>
+$result=mysqli_query($link,$sql);
+while($dbarr=mysqli_fetch_array($result))
+{?>
+<tr>
+	<td><?php echo " ".$dbarr['sub']." ";?></td>
+	<td><?php echo " ".$dbarr['user']." ";?></td>
+	<td><?php echo " ".$dbarr['grade']." ";?></td>
+	<td><?php echo " ".$dbarr['class']." ";?></td>
+	<td><?php echo " ".$dbarr['timein']." ";?></td>
+	<td><?php echo " ".$dbarr['timeout']." ";?></td>
+	<?php echo "<p>";?>
+	</tr>
+	<?php }?>
 </table>
-        </div>
+        </div></div></div>
     </body>
 </html>

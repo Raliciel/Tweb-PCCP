@@ -20,7 +20,7 @@
             </div>
             <div class="row">
                 <div class="col-sm-6">
-                    <form action="show_check.php" method="Post">
+                    <form action="show_check.php" method="Post" target="displayer">
                     <div class="col-sm-6">
                             <label> ห้องที่จอง </label>
                         <div class="row">
@@ -88,7 +88,7 @@
                 </div>
             </div>
             <div class="row col-sm-12 card">
-                <iframe src="show_check.php">
+                <iframe src="show_check.php" name="displayer">
             </div>
             <div class="row"><div class="col-sm-6"></div>
             <div class="col-sm-6 btn-group-vertical">

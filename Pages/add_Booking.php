@@ -13,64 +13,63 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
 	</head>
 	<body>
-		<div class="container-fluid">
-		<div class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" id="Warning">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header" style="overflow:hidden; background-color:rgb(255, 238, 0)">
-                            <h5 class="modal-title">สถานะการจอง</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <?php
-							$roomrend=$POST['roomrend'];
-							$password=$POST['password'];
-							$user=$_POST['user'];
-							$sub=$_POST['sub'];
-							$grade=$_POST['grade'];
-							$class=$_POST['class'];
-							$day=$_POST['day'];
-							$timein=$_POST['timein'];
-							$timeout=$_POST['timeout'];
-							$count='0';
-							$link=mysqli_connect("127.0.0.1","root");
-							mysqli_set_charset($link,'utf8');
-							mysqli_query($link,"Use projectend;");
-							if($roomrend=='1')
-								$room=$password;
-							else
-								$room=$roomrend;
-							$sql="Select * From roomtable2 Where roomrend == $room and day == $day;";
-							$result=mysqli_query($link,$sql);
-							where($dbarr=mysqli_fetch_array($result))
-							{
-								if($timein>=$dbarr["timein"]&&$timein<=$dbarr["timeout"])
-									$count='1';
-								if($timeout>=$dbarr["timein"]&&$timeout<=$dbarr["timeout"])
-									$count='1';
-							}
-							?>
-						<p>
-						<?php
-						if($count=='0')
-						{
-							$sql="Insert into roomtable2 Values('$room','$sub','$day','$user','$grade','$class','$timein','$timeout');";
-							$result=mysqli_query($link,$sql);
-							echo "ท่านได้ทำการจองเสร็จสิ้นแล้ว";
-						}
-						else
-							echo "กรุณาไปตรวจสอบข้อมูลใหม่"
-						mysqli_close($link);
-						?></p>
-                        </div>
-                        <div class="modal-footer">
-                            <a role="button" type="summit" class="btn btn-outline-prima" href="index-login.php">รับทราบ</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+		<div class="contianer-fluid">
+		<div class="row">
+			<div class="col-sm-6 jumbotron">
+				<h1>สถานะการจอง</h1>
+				<?php
+				$roomrend=$_POST['roomrend'];
+				$password=$_POST['password'];
+				$user=$_POST['user'];
+				$sub=$_POST['sub'];
+				$grade=$_POST['grade'];
+				$class=$_POST['class'];
+				$day=$_POST['day'];
+				$timein=$_POST['timein'];
+				$timeout=$_POST['timeout'];
+				$count="0";
+				$link=mysqli_connect("127.0.0.1","root");
+				mysqli_set_charset($link,'utf8');
+				mysqli_query($link,"Use projectend;");
+				if($roomrend=="1")
+					$room=$password;
+				else
+					$room=$roomrend;
+				$sql="Select * From roomtable2 Where roomrend = '$room' and day = '$day' ;";
+				$result=mysqli_query($link,$sql);
+				while($dbarr = mysqli_fetch_array($result))
+				{
+					if($timein>=$dbarr['timein'])
+					{
+						if($timein<=$dbarr['timeout'])
+						$count="1";
+					}
+					if($timeout>=$dbarr['timein'])
+					{
+						if($timeout<=$dbarr['timeout'])
+						$count="1";
+					}
+				}?>
+				<p>
+					<?php if($count=="0")
+					{
+						$sql="Insert into roomtable2 Values('$room','$sub','$day','$user','$grade','$class','$timein','$timeout');";
+						$result=mysqli_query($link,$sql);
+						echo "ท่านได้ทำการจองเสร็จสิ้นแล้ว";
+					}
+					else
+						echo "กรุณาไปตรวจสอบข้อมูลใหม่";
+					mysqli_close($link);
+					?>
+				</p>
+			</div>
+			<div class="col-sm-6 btn btn-group-vertical">
+				<a role="button" class="btn btn-primary btn-block" href="index-login.php">กลับสู่หน้าหลัก</a>
+				<a role="button" class="btn btn-secondary btn-block" href="Booking.php">จองอีกครั้ง</a>
+			</div>
 		</div>
+	</div>
+	</div>
+
 	</body>
 </html>
