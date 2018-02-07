@@ -4,11 +4,17 @@
     color:#1C2557;
 
 }
-    .sleep
+.sleep
     {
         transform: 0px;
         
     }
+iframe
+{
+    width:0;
+    height:0;
+    border:0px solid #fff;
+}
 @media only screen and (min-width:0px){
     body{
             background-color: rgb(123, 176, 255);
