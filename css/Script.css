@@ -60,9 +60,6 @@ iframe
         text-align: left;
 
     }
-    .container-fluid .row .col-sm-8 table thead tr th{
-        width:40%;
-    }
     .container-fluid .row .col-sm-12{
         text-align: center;
     }
